@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1073807439681",
+    "firebase_url": "https://frezzing-5a6dc.firebaseio.com",
+    "project_id": "frezzing-5a6dc",
+    "storage_bucket": "frezzing-5a6dc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1073807439681:android:a465e5899c9beaa02393c0",
+        "android_client_info": {
+          "package_name": "com.example.frezzing"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1073807439681-obsl5589gl4ene60ejk7ppa2t4trl849.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.frezzing",
+            "certificate_hash": "64f38db639f5078b1202b740afc747887ec30253"
+          }
+        },
+        {
+          "client_id": "1073807439681-l2gth9scnnvnu7647b1l9ifrhgf71npo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBq7FHRybDz9uaHFwbkQrWO-YkbzQgN4R0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1073807439681-l2gth9scnnvnu7647b1l9ifrhgf71npo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

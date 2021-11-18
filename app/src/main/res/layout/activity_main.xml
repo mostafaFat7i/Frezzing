@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/side_nav_bar"
+    android:orientation="vertical"
+    tools:context=".Buyer.MainActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="135dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/icon" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Freezing"
+        android:textSize="30sp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:textAllCaps="true"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold|italic"
+        android:textColor="@color/colorWhite"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The easiest way to order frezzing drinks and fastest delivery service \n Order your drink and enjoy"
+        android:textSize="22sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textAllCaps="false"
+        android:fontFamily="@font/caviardreams_italic"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/colorWhite"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/buttonbackground"
+        android:text="Sign Up"
+        android:layout_marginTop="120dp"
+        android:onClick="GotoRegisterActivity"
+        android:padding="10dp"
+        android:fontFamily="@font/caviar_dreams_bold"
+        android:textAllCaps="false"
+        android:textColor="@color/colorCRIMSON"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/toLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:onClick="GotoLoginActivity"
+        android:layout_marginTop="20dp"
+        android:text="Have an account? Sign in"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:fontFamily="@font/caviar_dreams_bold"
+        android:textStyle="bold"  />
+
+
+</LinearLayout>

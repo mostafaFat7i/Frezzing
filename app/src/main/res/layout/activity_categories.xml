@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Buyer.CategoriesActivity">
+
+    <RelativeLayout
+        android:id="@+id/category_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/side_nav_bar"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/products_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Bar"
+            android:textColor="@color/colorWhite"
+            android:textSize="35sp"
+            android:fontFamily="@font/caviar_dreams_bold"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/acountimage"
+            android:layout_width="60dp"
+            android:layout_height="45dp"
+            android:onClick="showMenu"
+            android:layout_centerInParent="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="7dp"
+            android:src="@drawable/profile" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/category_image"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/category_layout"
+        android:scaleType="center"
+        android:src="@drawable/bar1"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/category_image"
+        android:background="@drawable/round"
+        android:orientation="vertical"
+        android:backgroundTint="#F1F1F1"
+        android:layout_marginTop="260dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            >
+
+         <androidx.cardview.widget.CardView
+             android:layout_width="160dp"
+             android:layout_height="200dp"
+             android:onClick="GoToJuiceMenu"
+             android:layout_alignParentStart="true"
+             android:layout_marginStart="10dp"
+             app:cardCornerRadius="30dp">
+             <ImageView
+                 android:id="@+id/juice"
+                 android:layout_width="match_parent"
+                 android:layout_height="120dp"
+                 android:scaleType="centerCrop"
+                 android:src="@drawable/juiceeeeee"/>
+
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="Fresh Juice"
+                 android:gravity="center"
+                 android:layout_marginTop="150dp"
+                 android:textStyle="bold|italic"
+                 android:textSize="22sp"
+                 android:fontFamily="@font/caviar_dreams_bold"
+                 android:textColor="#E91E63"/>
+
+         </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="160dp"
+                android:layout_height="200dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:onClick="GoToIcecreameMenu"
+                app:cardCornerRadius="30dp">
+                <ImageView
+                    android:id="@+id/icecreame"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/icecream"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ice Cream"
+                    android:gravity="center"
+                    android:fontFamily="@font/caviar_dreams_bold"
+                    android:layout_marginTop="150dp"
+                    android:textStyle="bold|italic"
+                    android:textSize="22sp"
+                    android:textColor="#E91E63"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        app:backgroundTint="@color/colorINDIANRED"
+        android:layout_margin="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/cartttt" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

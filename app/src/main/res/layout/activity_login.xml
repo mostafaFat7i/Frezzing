@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/side_nav_bar"
+    android:orientation="vertical"
+    tools:context=".Buyer.LoginActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/icon" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="Sign In"
+        android:fontFamily="@font/caviar_dreams_bold"
+        android:textAllCaps="true"
+        android:textColor="@color/colorWhite"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/Loginusername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:drawableRight="@drawable/ic_account_circle_black_24dp"
+        android:hint="Email"
+        android:lines="1"
+        android:textColor="@color/colorWhite"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="10dp"
+        android:textColorHint="@color/colorWhite"
+        android:textSize="20sp" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:hintAnimationEnabled="false"
+        app:hintEnabled="false"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/Loginpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:lines="1"
+            android:textColor="@color/colorWhite"
+            android:paddingLeft="10dp"
+            android:textColorHint="@color/colorWhite"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_password_input_layout"
+        >
+        <com.rey.material.widget.CheckBox
+            android:id="@+id/remember_me_chkb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Material.Drawable.CheckBox"
+            android:text="Remember Me"
+            android:textColor="@color/colorWhite"
+            app:cbd_strokeColor="#7A0808"
+            android:gravity="center"
+            android:fontFamily="@font/caviar_dreams_bold"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/forget_password_link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Forget Password?"
+            android:textColor="@color/colorWhite"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:onClick="GoToResetPassActivity"
+            android:fontFamily="@font/caviar_dreams_bold"
+            android:textAlignment="textEnd"
+            tools:ignore="RtlCompat" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/buttonbackground"
+        android:text="Get Started"
+        android:textAllCaps="true"
+        android:onClick="LoginUser"
+        android:textColor="@color/colorCRIMSON"
+        android:textSize="18sp"
+        android:fontFamily="@font/caviar_dreams_bold"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tosignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:onClick="GoToRegistration"
+        android:text="Create Account? Sign Up"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:fontFamily="@font/caviar_dreams_bold"
+        android:textStyle="bold" />
+</LinearLayout>

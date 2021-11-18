@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admins.AdminAddNewProductActivity">
+    <ImageView
+        android:id="@+id/select_product_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_centerHorizontal="true"
+        android:cropToPadding="false"
+        android:onClick="SelectImageFromGallary"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginLeft="45dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/select_product_image" />
+
+    <EditText
+        android:id="@+id/product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/select_product_image"
+        app:layout_constraintStart_toStartOf="@+id/select_product_image"
+        app:layout_constraintTop_toBottomOf="@+id/select_product_image"
+        android:background="@drawable/input_text"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:hint="Product Name"
+        android:inputType="textMultiLine"
+        android:padding="20dp" />
+
+    <EditText
+        android:id="@+id/product_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_name"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="@+id/product_name"
+        app:layout_constraintTop_toBottomOf="@+id/product_name"
+        android:background="@drawable/input_text"
+        android:hint="Description"
+        android:inputType="textMultiLine"
+        android:padding="20dp" />
+
+    <EditText
+        android:id="@+id/product_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_description"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="@+id/product_description"
+        app:layout_constraintTop_toBottomOf="@+id/product_description"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/input_text"
+        android:hint="Price"
+        android:inputType="textMultiLine"
+        android:padding="20dp" />
+
+    <TextView
+        android:id="@+id/group_radio_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textStyle="italic"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/product_price"
+        app:layout_constraintTop_toBottomOf="@+id/product_price"
+        android:text="Select Type"
+        />
+        <RadioGroup
+            android:id="@+id/type_choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/group_radio_title"
+            app:layout_constraintTop_toBottomOf="@+id/group_radio_title">
+            <RadioButton
+                android:id="@+id/radio_juice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:checked="true"
+                android:text="Juice"/>
+            <RadioButton
+                android:id="@+id/radio_icecreame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="IceCreame"/>
+        </RadioGroup>
+
+
+
+    <Button
+        android:id="@+id/add_new_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Product"
+        android:background="@drawable/buttonstyle"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/product_price"
+        app:layout_constraintTop_toBottomOf="@+id/type_choice"
+        android:textColor="@color/colorWhite"
+        android:padding="15dp"
+        android:textAllCaps="false"
+        android:onClick="ValidateProductData"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/product_price"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
